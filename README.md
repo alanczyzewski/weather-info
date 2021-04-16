@@ -4,7 +4,7 @@ The purpose of the project was to automate the process of checking a weather for
 ## How it works
 Script *weather_info.py* is launched every hour (e.g. 6:59, 7:59, etc.) by *cron*.
 
-![crontab_image](img/crontab.png)
+`59 * * * * /usr/bin/python3 .../weather_info.py`
 
 While the program was running, all the application activities are storing in logfiles (e.g. *2020-11-25.log*).
 ###### Program steps:
@@ -20,6 +20,13 @@ While the program was running, all the application activities are storing in log
 
 * Closes the connection to the SMTP server.
 
+## Technologies:
+* Python 3
+* MySQL
+* API
+* HTML, CSS
+* cron
+
 ###### Example message (*Gmail Android App*)
 
 ![header_message_image](img/header_message.jpg)
@@ -27,9 +34,3 @@ While the program was running, all the application activities are storing in log
 ![message_part1_image](img/message_part1.jpg)
 ![message_part2_image](img/message_part2.jpg)
 
-## Technologies:
-* Python 3
-* MySQL
-* cron
-* API
-* HTML, CSS
