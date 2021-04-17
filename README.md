@@ -1,6 +1,6 @@
 # Daily Weather Forecast
 ## Description
-The purpose of the project was to automate the process of checking a weather forecast. Subscribers can choose days and hour when they will receive emails with weather information.
+The purpose of the project was to automate the daily checking of the weather forecast. Subscribers can choose days and hour when they will receive emails with weather information.
 ## How it works
 Script *weather_info.py* is launched every hour (e.g. 6:59, 7:59, etc.) by *cron*.
 
